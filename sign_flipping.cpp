@@ -13,8 +13,7 @@ while(t--){
     for(int i=0;i<n;i++){
         cin>>a;
         if(i%2==0 && a>0 ||i%2==1 && a<0)   a=-a;
-        cout<<a<<" ";
-    } 
+        cout<<a<<" "; } 
     cout<<"\n"; 
 }
 return 0;
