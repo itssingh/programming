@@ -14,7 +14,7 @@ while(n--){
     for(int i=0;i<k;i++){
         cin>>temp;
         sum+=temp;
-    }
+   }
     cin>>q;
     if(q<=10 && sum>=m) count++;
 }
