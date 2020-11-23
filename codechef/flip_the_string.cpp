@@ -26,7 +26,6 @@ while(t--){
             if(a[k]=='1')    a[k]='0';
             else    a[k]='1';
         }
-
     }
 }
     cout<<count<<"\n";
