@@ -11,13 +11,18 @@ cin>>n>>q;
 ll a[2*n];
 for(i=0;i<n;i++){
 	cin>>a[i];
-    a[i+n]=a[i]/10+a[i]%10;
+	ll s=0; ll x=a[i];
+    while (x != 0) {
+      s = s + x % 10;
+      x = x / 10;
+   }
+   a[i+n]=s;
 }
 while(q--){
 	flag =true;
 	cin>>i;	
 	i-=1;
-	for(j=i+1;j<n-1;j++){
+	for(int j=i+1;j<n;j++){
 		if(a[i]<a[j] && (a[i+n]>a[j+n])){
 			cout<<j+1<<"\n";
 			flag=false;
