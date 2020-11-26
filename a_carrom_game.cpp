@@ -24,10 +24,10 @@ cin>>a>>b>>c>>d;
 int i=0;
 int j=0;
 while(i<=n||j<=n){
-	if(i!=n){
+	if(i<n){
 		if(a>=black[i])	{
-			i++;
 			a+=black[i];
+			i++;
 		}
 		else	a++;
 	}
@@ -38,24 +38,24 @@ while(i<=n||j<=n){
 		}
 		else	a++;
 	}
-	if(j!=n){
+	if(j<n){
 		if(b>=white[j])	{
-			j++;
 			b+=white[j];
+			j++;
 		}
 		else	b++;
 	}
 	else{
-		if(a>=red){
+		if(b>=red){
 			cout<<"B-D";
 			break;
 		}
 		else	b++;
 	}
-	if(i!=n){
+	if(i<n){
 		if(c>=black[i])	{
-			i++;
 			c+=black[i];
+			i++;
 		}
 		else	c++;
 	}
@@ -66,10 +66,10 @@ while(i<=n||j<=n){
 		}
 		else	c++;
 	}
-	if(j!=n){
+	if(j<n){
 		if(d>=white[j])	{
-			j++;
 			d+=white[j];
+			j++;
 		}
 		else	d++;
 	}
