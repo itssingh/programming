@@ -47,6 +47,5 @@ while(p){
         
 }
 cout<<d;
-
 return 0;
 }
