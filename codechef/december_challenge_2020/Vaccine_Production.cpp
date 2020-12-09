@@ -16,7 +16,7 @@ if(d1>d2){
     v1=v2;
     v2=temp;
 }
-while(p){
+while(p>0){
    if(d1!=d2){
        if(d<d1){
            d=d1;
@@ -43,8 +43,7 @@ while(p){
            d+=v;
            break; 
        }
-   }
-        
+   }      
 }
 cout<<d;
 return 0;
