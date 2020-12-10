@@ -10,7 +10,14 @@ ll a,b;
 cin>>t;
 while(t--){
     cin>>a>>b;
-    
+    ll a_e,a_o,b_e,b_o,total;
+    a_e=a/2;
+    a_o=a-a_e;
+    b_e=b/2;
+    b_o=b-b_e;
+    total=a_e*b_e+a_o*b_o;
+    cout<<total<<"\n";
+
 }
 return 0;
 }
