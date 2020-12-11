@@ -27,7 +27,7 @@ while(t--){
             cout<<-i<<" ";
         }
     }
-    }
+ }
     else{
         for(int i=1;i<=n;i++){
         if(k && i%2==0){
@@ -38,7 +38,7 @@ while(t--){
             cout<<i<<" ";
         }
     }
-    }
+ }
     cout<<"\n";
 }
 return 0;
