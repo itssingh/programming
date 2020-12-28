@@ -18,7 +18,7 @@ while(t--){
             cin>>a[i][j];
     }
     cin>>q;
-    for(int it=0;it<q;it++){
+    while(q--) {
         flag =true;
         cin>>x>>y>>v;
         a[x-1][y-1]=v;
