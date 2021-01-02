@@ -10,13 +10,8 @@ cin>>t;
 while(t--){
     int n;
     cin>>n;
-    int sum=0;
-    for(int i=1;i<n;i++){
-        sum+=2*i*i*i;
-
-    }
-        sum+=n*n*n;
-        cout<<sum<<"\n"; 
+    
+ 
 }
 return 0;
 }

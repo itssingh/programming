@@ -5,18 +5,19 @@ int main(){
 ios_base::sync_with_stdio(false);
 cin.tie(0);
 cout.tie(0);
-int t;
+ll t;
 cin>>t;
 while(t--){
-    int n;
+    ll n;
     cin>>n;
-    int sum=0;
-    for(int i=1;i<n;i++){
-        sum+=2*i*i*i;
-
+    int sum=0; //sum of digits
+    int m=n;
+    while(n){
+        sum+=n%10;
+        n/=10;
     }
-        sum+=n*n*n;
-        cout<<sum<<"\n"; 
+    m%sum?cout<<"No\n":cout<<"Yes\n";   
+ 
 }
 return 0;
 }

@@ -10,13 +10,12 @@ cin>>t;
 while(t--){
     int n;
     cin>>n;
-    int sum=0;
+    ll num=0;
     for(int i=1;i<n;i++){
-        sum+=2*i*i*i;
-
+        num+=i*i;
     }
-        sum+=n*n*n;
-        cout<<sum<<"\n"; 
+    cout<<num<<"\n";
+ 
 }
 return 0;
 }

@@ -10,13 +10,12 @@ cin>>t;
 while(t--){
     int n;
     cin>>n;
-    int sum=0;
-    for(int i=1;i<n;i++){
-        sum+=2*i*i*i;
-
+    vector<ll>array(n);
+    for(int i=0;i<n;i++){
+        cin>>array[i];
     }
-        sum+=n*n*n;
-        cout<<sum<<"\n"; 
+    sort(array.begin(),array.end());
+    cout<<array[n-1]*array[n-2]<<" "<<array[0]*array[1]<<"\n";
 }
 return 0;
 }
