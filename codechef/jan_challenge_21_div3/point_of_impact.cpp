@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
-bool flag=false;
+bool flag;
 int main(){
 ios_base::sync_with_stdio(false);
 cin.tie(0);
@@ -9,8 +9,10 @@ cout.tie(0);
 int t;
 cin>>t;
 while(t--){
+    flag=true;
     ll n,k,x,y;
     cin>>n>>k>>x>>y;
+    x>y?flag=true:flag=false;
     k=k%4;
     if(x==y)
         cout<<n<<" "<<n<<"\n";
@@ -21,6 +23,7 @@ while(t--){
         x+= diff;
         y+= diff;
         k--;
+    if(flag){
         while(k){
             if(x==n && y<n){
                 x=y;
@@ -28,7 +31,7 @@ while(t--){
                 k--;
             }
             else if(x<n && y==n){
-                y=x;
+                y=n-x;
                 x=0;
                 k--;
             }
@@ -38,11 +41,36 @@ while(t--){
                 k--;
             }
             else if(x<n && y==0){
-                y=x;
+                y=n-x;
                 x=n;
                 k--;
             }
         }  
+    } 
+    else{
+         while(k){
+            if(x==n && y<n){
+                x=n-y;
+                y=0;
+                k--;
+            }
+            else if(x<n && y==n){
+                y=x;
+                x=n;
+                k--;
+            }
+            else if (x==0 && y<n){
+                x=n-y;
+                y=n;
+                k--;
+            }
+            else if(x<n && y==0){
+                y=x;
+                x=0;
+                k--;
+            }
+        }  
+    }
     cout<<x<<" "<<y<<"\n";  
     }
 }
