@@ -6,5 +6,7 @@ int main(){
         cout<<a<<" is greater than 3\n";
     else
         cout<<a<<" is smaller than 3\n";
+    
+    //This line has been added.c
 return 0;
 }
